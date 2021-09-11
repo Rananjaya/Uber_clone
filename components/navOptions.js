@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View,FlatList,TouchableOpacity,Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import { Icon } from 'react-native-elements/dist/icons/Icon';
+// import uber_car from '../src/img/UberX2.png';
 
 const data =[
     {
@@ -24,7 +25,7 @@ const navOptions = () => {
        data={data}
        horizontal
        keyExtractor={(item) => item.id}
-       renderItem={({item}) => (
+       renderItem={({item}) => (  // item is one array object
            <TouchableOpacity style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
             <View>
              <Image
